@@ -103,6 +103,28 @@ const char *str = s.c_str(); // true
 	void print (int (*matrix)[10], int rowSize){}
 	void print(int matrix[][10], int rowSize){}
 	//以上两种形式等价
+	
+#day5
+
+	int **data;
+	data = (int**)malloc(sizeof(int*)*width);
+	for(int i = 0; i < width; i++){
+		data[i] = (int*)malloc(sizeof(int)*height);
+	}
+	/////////////////////////////////////
+	int *data;
+	data = (int*)malloc(sizeof(int)*width*height); 
+	/////////////////////////////////////////////////////
+	+= concurrent
+	#include <QMap>
+	#include <QList>
+	#include <qtconcurrentmap.h>
+	int ccc(const QString &str){
+		return std::atoi(str.toStdString());
+	}
+	QStringList = tempList = datatype.split(", ");
+	QList<int> tempdata = QtConcurrent::blockingMapped(tempList, ccc);
+	
 > 胡建军
 >>　Owen
 
